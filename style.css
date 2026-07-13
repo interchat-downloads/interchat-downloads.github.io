@@ -1,0 +1,84 @@
+/* General page setup */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f8f9fa; /* Very light gray background */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Center and space the top block */
+.top-block {
+    margin-top: 10vh;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo sizing */
+.logo {
+    width: 280px; 
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* InterChat Title */
+.brand-name {
+    color: #ff5722; /* InterChat Orange */
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 0 0 15px 0;
+}
+
+/* Subheading text */
+.tagline {
+    color: #89939a; /* Gray text */
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0 0 40px 0;
+}
+
+/* Layout for the icons section */
+.downloads {
+    display: flex;
+    align-items: baseline;
+    gap: 50px; /* Slightly wider gap to accommodate text */
+    margin-top: 40px; 
+}
+
+/* Stack the icon and text vertically */
+.download-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none; /* Removes the default blue link underline */
+    gap: 8px; /* Space between icon and text */
+}
+
+/* Base icon styling */
+.os-icon {
+    width: 45px;
+    height: auto;
+    transition: filter 0.2s ease;
+}
+
+/* Base text styling */
+.os-label {
+    color: #89939a; /* Matches your gray tagline text */
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+/* Hover effects */
+.download-link:hover .os-icon {
+    /* Converts gray SVG to InterChat Orange */
+    filter: invert(49%) sepia(84%) saturate(4155%) hue-rotate(349deg) brightness(101%) contrast(101%);
+}
+
+.download-link:hover .os-label {
+    color: #ff5722; /* Changes text to InterChat Orange */
+}
