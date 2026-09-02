@@ -45,7 +45,8 @@ body {
 .downloads {
     display: flex;
     align-items: baseline;
-    gap: 50px; /* Slightly wider gap to accommodate text */
+    flex-wrap: wrap;
+    gap: 30px;
     margin-top: 40px; 
 }
 
@@ -56,25 +57,27 @@ body {
     align-items: center;
     text-decoration: none; /* Removes the default blue link underline */
     gap: 8px; /* Space between icon and text */
+    width: 70px;
 }
 
 /* Base icon styling */
 .os-icon {
     width: 45px;
     height: auto;
-    transition: filter 0.2s ease;
+    opacity: 0.4;
 }
 
 /* Base text styling */
 .os-label {
-    color: #89939a; /* Matches your gray tagline text */
+    color: #777;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 400;
     transition: color 0.2s ease;
 }
 
 /* Hover effects */
 .download-link:hover .os-icon {
+    opacity: 1;
     /* Converts gray SVG to InterChat Orange */
     filter: invert(49%) sepia(84%) saturate(4155%) hue-rotate(349deg) brightness(101%) contrast(101%);
 }
